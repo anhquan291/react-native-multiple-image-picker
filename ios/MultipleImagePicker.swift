@@ -103,7 +103,6 @@ class MultipleImagePicker: NSObject, TLPhotosPickerViewControllerDelegate,UINavi
         MultipleImagePickerConfigure.singleSelectedMode = (self.options["singleSelectedMode"])! as! Bool;
         MultipleImagePickerConfigure.maxSelectedAssets = self.options["maxSelectedAssets"] as? Int;
         MultipleImagePickerConfigure.selectedColor = hexStringToUIColor(hex: self.options["selectedColor"] as! String)
-        MultipleImagePickerConfigure.closeColor = hexStringToUIColor(hex: self.options["closeColor"] as! String)
         MultipleImagePickerConfigure.previewAtForceTouch = self.options["isPreview"] as! Bool;
         
         let mediaType = self.options["mediaType"] as! String;
